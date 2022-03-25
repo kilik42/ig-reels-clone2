@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <h1>Hey lets program an IG reels clone</h1>
 
       <div className="app__top">
