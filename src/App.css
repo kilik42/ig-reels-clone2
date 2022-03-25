@@ -24,5 +24,10 @@ html{
   height: 65vh;
   background-color: white;
   width: 70%;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height: 1200px;
+  overflow:scroll;
+  scroll-snap-type: y mandatory;
 }
 
