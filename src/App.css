@@ -31,3 +31,11 @@ html{
   scroll-snap-type: y mandatory;
 }
 
+/* hide scrollbar */
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+.app__videos{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
