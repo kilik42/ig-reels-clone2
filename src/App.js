@@ -1,5 +1,6 @@
 
 import './App.css';
+import VideoCard from './VideoCard';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         {/* container of app videos --scrolling container*/}
 
        {/* videos */}
+       <VideoCard/>
+       <VideoCard/>
+       <VideoCard/>
 
      </div>
 

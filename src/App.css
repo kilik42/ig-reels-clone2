@@ -6,6 +6,9 @@ html{
 .app__logo{
   height: 12vh;
 }
+.app__top{
+  margin-bottom: -150px;
+}
 
 .app__top > h1{
   text-align: center;
@@ -21,7 +24,7 @@ html{
 
 .app__videos{
   position: relative;
-  
+
   height: 65vh;
   background-color: white;
   width: 70%;
@@ -36,6 +39,8 @@ html{
 .app__videos::-webkit-scrollbar {
   display: none;
 }
+
+/* hide scrollbr fro IE, EDGE AND FIREFOX */
 .app__videos{
   -ms-overflow-style: none;
   scrollbar-width: none;
