@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './VideoCard.css'
+import VideoFooter from './VideoFooter';
 import VideoHeader from './VideoHeader';
 
 function VideoCard() {
@@ -35,7 +36,7 @@ const onVideoPress = () => {
       loop ={true}
       />
       
-
+      <VideoFooter />
     </div>
   )
 }
