@@ -2,6 +2,7 @@ import React from 'react'
 import './VideoFooter.css'
 import {Button, Avatar} from "@material-ui/core";
 import MusicNoteIcon from "@material-ui/icons/MusicNote"
+import Ticker from 'react-ticker';
 function VideoFooter({channel, song , likes, shares, avatarSrc}) {
   return (
     <div className="videoFooter">
@@ -13,6 +14,16 @@ function VideoFooter({channel, song , likes, shares, avatarSrc}) {
         </div>
         <div className="videoFooter__ticker">
            <MusicNoteIcon className="videoFooter__icon"/>
+           <Ticker mode ="smooth">
+               {
+                   ({index})=> (
+                       
+                       <>
+                       <h1>{song}</h1>
+                       </>
+                   )
+               }
+           </Ticker>
         </div>
 
       
