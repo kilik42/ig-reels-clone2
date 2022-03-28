@@ -1,9 +1,18 @@
 import React from 'react'
 import './VideoFooter.css'
-function VideoFooter() {
+import {Button, Avatar} from "@material-ui/core";
+function VideoFooter({channel, song , likes, shares, avatarSrc}) {
   return (
-    <div className="VideoFooter">
-      <h3>Footer</h3>
+    <div className="videoFooter">
+        <div className="videoFooter">
+                <Avatar src={avatarSrc}/>
+                <h3>
+                    {channel}. <Button>Follow</Button>
+                </h3>
+        </div>
+     
+
+      <Button />
     </div>
   )
 }
