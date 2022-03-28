@@ -19,7 +19,7 @@ function App() {
 
        {/* videos */}
        <VideoCard
-        channel={channel}
+       channel ={channel}
         avatarScr = {avatarSrc}
         song = {song}
         url ={url}

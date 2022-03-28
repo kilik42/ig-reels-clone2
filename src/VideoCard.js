@@ -3,7 +3,7 @@ import './VideoCard.css'
 import VideoFooter from './VideoFooter';
 import VideoHeader from './VideoHeader';
 
-function VideoCard() {
+function VideoCard({url, likes, shares, channel, avatarSrc, song}) {
 //usestate hook to keep track of the video card's state
 const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 //ref to the video element its a pointer to the video element
@@ -31,12 +31,19 @@ const onVideoPress = () => {
       ref={videoRef}
       onClick={onVideoPress}
       className="video__player"
-      src='https://player.vimeo.com/external/519943720.sd.mp4?s=d9609b546c57dac56dd27752dc62c9a003556042&profile_id=165&oauth2_token_id=57447761'
+      src={url}
       alt='IG reel video'
       loop ={true}
       />
       
-      <VideoFooter />
+      <VideoFooter 
+      channel ={channel}
+      avatarScr = {avatarSrc}
+      song = {song}
+      
+      likes ={likes}
+      shares ={shares}
+      />
     </div>
   )
 }
