@@ -25,7 +25,18 @@ function VideoFooter({channel, song , likes, shares, avatarSrc}) {
                }
            </Ticker>
         </div>
+            <div className="videoFooter__actions">
+                    <div className="videoFooter__actionsLeft">
+                        <FavoriteIcon fontSize="large"/>
+                        <ModeCommentIcon fontSize="large"/>
+                        <SendIcon fontSize="large"/>
+                        <MoreHorizon fontSize="large"/>
+                        {/* 1:39:31 */}
+                    </div>
+                    <div className="videoFooter__actionsRight">
 
+                    </div>
+            </div>
       
     </div>
   )

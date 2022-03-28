@@ -1,5 +1,7 @@
 .videoFooter{
-    display: flex;
+    position: relative;
+    margin-left: 20px;
+    bottom: 100px;
 }
 
 .videoFooter__text{
@@ -22,7 +24,20 @@
 }
 
 .videoFooter__ticker> .ticker{
+  height: fit-content;
   width: 60%;
   margin-left: 30px;
   margin-bottom: 20px;
 }
+
+.videoFooter__ticker h1{
+    padding-top: 7px;
+    font-size: 12px;
+    color: white;
+}
+.videoFooter__icon{
+    position: absolute;
+    left: 5px;
+    color: white;
+}
+
