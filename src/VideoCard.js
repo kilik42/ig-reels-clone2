@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './VideoCard.css'
+import VideoHeader from './VideoHeader';
 
 function VideoCard() {
 //usestate hook to keep track of the video card's state
@@ -7,6 +8,9 @@ const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 //ref to the video element its a pointer to the video element
 const videoRef = useRef(null);
 const onVideoPress = () => {
+
+// 1:01:53
+
 
   if (isVideoPlaying) {
     //stop the video
@@ -21,6 +25,7 @@ const onVideoPress = () => {
 }
   return (
     <div className="videoCard">
+      <VideoHeader />
       <video 
       ref={videoRef}
       onClick={onVideoPress}
