@@ -12,10 +12,10 @@ function VideoFooter({channel, song , likes, shares, avatarSrc}) {
                 </h3>
         </div>
         <div className="videoFooter__ticker">
-
+           <MusicNoteIcon className="videoFooter__icon"/>
         </div>
 
-      <Button />
+      
     </div>
   )
 }
