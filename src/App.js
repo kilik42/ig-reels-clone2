@@ -18,7 +18,14 @@ function App() {
         {/* container of app videos --scrolling container*/}
 
        {/* videos */}
-       <VideoCard/>
+       <VideoCard
+        channel={channel}
+        avatarScr = {avatarSrc}
+        song = {song}
+        url ={url}
+        likes ={likes}
+        shares ={shares}
+       />
        <VideoCard/>
        <VideoCard/>
 
