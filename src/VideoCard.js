@@ -10,7 +10,7 @@ const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 const videoRef = useRef(null);
 const onVideoPress = () => {
 
-// 1:01:53
+
 
 
   if (isVideoPlaying) {
