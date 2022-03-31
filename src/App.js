@@ -26,22 +26,24 @@ function App() {
 
      <div className="app__videos">
         {/* container of app videos --scrolling container*/}
+       {reels.map(({url, channel, description, song, likes, messages, shares}) => (
+          <VideoCard
+          channel ={channel}
+           avatarScr = {avatarSrc}
+           song = {song}
+           url ={url}
+           likes ={likes}
+           shares ={shares}
+          />
+        ))}
 
-       {/* videos */}
-       <VideoCard
-       channel ={channel}
-        avatarScr = {avatarSrc}
-        song = {song}
-        url ={url}
-        likes ={likes}
-        shares ={shares}
-       />
-       <VideoCard/>
-       <VideoCard/>
+      
+       
+    
 
      </div>
 
-    {/* 43:25 */}
+    
      
     </div>
   );
