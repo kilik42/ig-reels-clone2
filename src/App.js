@@ -1,8 +1,18 @@
 
+import { useEffect, useState } from 'react';
 import './App.css';
 import VideoCard from './VideoCard';
-
+import db from "./firebase";
 function App() {
+  const [reels, setReels] = useState([]);
+
+  useEffect(()=>{
+    db.collection('reels').onSnapshot(snapshot => (
+      setReels(snapshot.docs.map(doc => doc.data()))
+      
+      ))
+  },[])
+
   return (
     <div className="app">
       <h1>Hey lets program an IG reels clone</h1>
