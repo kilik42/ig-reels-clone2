@@ -6,7 +6,7 @@ import Ticker from 'react-ticker';
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ModeCommentIcon from "@material-ui/icons/ModeComment";
 import SendIcon from "@material-ui/icons/Send";
-import MoreHorizon from "@material-ui/icons/MoreHorizontal";
+import MoreHorizon from "@material-ui/icons/MoreHoriz";
 
 function VideoFooter({channel, song , likes, shares, avatarSrc}) {
   return (
